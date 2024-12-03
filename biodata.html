@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Hello, I'm Izzah</title>
+
+
+</head>
+<style>    
+
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Trirong', sans-serif;
+    }
+
+    body {
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background-image: url('backgroundbiodata.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner img {
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      color: #397291;
+      font-family: 'Sofia', sans-serif;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 5rem 9%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8rem;
+      background-color: white;
+    }
+
+    .home-content {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .home-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .home-content h1 span {
+      color: #1b7da1;
+    }
+
+    .home-content p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .home-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .home-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.2s ease;
+    }
+
+    .home-img img:hover {
+      transform: scale(1.1);
+    }
+
+    .footerBottom{
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footerBottom p{
+      color: white;
+
+    }
+
+    .designer{
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0px 5px;
+    }
+
+    table {
+      width: 800px;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      table-layout: fixed;
+      margin: 0 auto;
+    }
+
+/* Styling for table headers */
+    th {
+      background-color: #1b7da1;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 5px;
+    }
+
+/* Styling for table data cells */
+    td {
+      padding: 10px;
+      text-align: center;
+      font-size: 1rem;
+      background-color: white;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+/* Add borders to table, rows, and columns */
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+/* Hover effect for rows */
+    tr:hover {
+      background-color: #f0f0f0;
+      cursor: pointer; 
+    }
+
+/* Alternate row color */
+    tr:nth-child(even) {
+     background-color: #f9f9f9;
+    }
+
+/* Add some padding to the whole table */
+    body {
+      padding: 20px;
+      background-color: #fffff;
+    }
+
+/* Make the header bold and larger */
+    th[colspan="6"] {
+      background-color: #7ec8c6;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+ 
+/* Add a subtle hover effect on the data cells */
+    td:hover {
+      background-color: #f6f8f7;
+      cursor: pointer;
+    }
+
+/* Add some space to cells for better readability */
+    td, th {
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+/* Color based on subject */
+    td.imd317 {
+      background-color: #ffdfdf; /* Light Red for IMD 317 */
+    }
+
+    td.imd318 {
+      background-color: #fff3e0; /* Light Yellow for IMD 318 */
+    }
+
+    td.imd316 {
+      background-color: #c1e1d6; /* Light Green for IMD 316 */
+    }
+
+    td.imd313 {
+      background-color: #d0e8d0; /* Light Aqua for IMD 313 */
+    }
+
+    td.imd310 {
+      background-color: #d3f5f2; /* Light Blue for IMD 310 */
+    }
+
+/* Color based on time slot */
+    td.time1 {
+      background-color: #ffdfdf; /* Light Red for 8:00 AM - 10:00 AM */
+    }
+
+    td.time2 {
+      background-color: #fff3e0; /* Light Yellow for 10:00 AM - 11:00 AM */
+    }
+
+    td.time3 {
+      background-color: #c1e1d6; /* Light Green for 12:00 PM - 2:00 PM */
+    }
+
+    td.time4 {
+      background-color: #d0e8d0; /* Light Aqua for 2:00 PM - 3:00 PM */ 
+    }
+
+    td.time5 {
+      background-color: #d3f5f2; /* Light Blue for 4:00 PM - 6:00 PM */
+    }
+
+    td.time6 {
+       background-color: #d8bfd8; /* Lilac for 2:00 PM - 3:00 PM */
+    }
+
+     button{
+      width: 180px;
+      color: white;
+      font-size: 12px;
+      padding: 12px 0;
+      background: #1b7da1;
+      border: 0;
+      border-radius: 20px;
+      outline: none;
+      margin-top: 30px;
+    }
+
+     button:hover {
+       background-color: #5ba9a6;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+<section class="banner">
+	<div class="content">
+        	<img src="myself3.jpg" alt="Biodata" width="300" height="300">
+        	<h1>Meet Izzah</h1>
+        	<p>A storyteller in the making, weaving dreams into reality.</p>
+        </div>
+</section>
+
+<section class="home">
+    	<div class="home-img">
+      		<img src="myself2.png" alt="">
+        </div>
+
+   	<div class="home-content">
+      		<h1>Hi, It's <span>Izzah</span></h1>
+      		<p> Hi, my name is Nurul Izzah Mansor, and I'm excited to share a little bit about myself. I'm a 20-year-old aspiring storyteller and a dedicated learner, passionate about turning ideas into impactful realities. Born on December 26, 2004, in the serene town of Kulim, Kedah, I've always cherished the values of hard work, creativity, and empathy.</p>
+      		<p>In my free time, I enjoy delving into creative projects, spending quality time with my family, and discovering stories that move me, whether through books, music, or everyday life.</p>
+    	</div>
+</section>
+
+<div style="height: 50px;"></div>
+
+<table>
+  <tr>
+    <th colspan="5">My Class Timetable 2024</th>
+  </tr>
+  
+  <tr>
+    <th>Sun</th>
+    <th class="time1">Mon</th>
+    <th class="time2">Tue</th>
+    <th class="time3">Wed</th>
+    <th class="time4">Thu</th>
+  </tr>
+  
+  <tr>
+    <td rowspan="4">Study Session</td>
+    <td class="imd317 time1">8:00 AM - 10:00 AM</td>
+    <td class="imd318 time2">10:00 AM - 11:00 AM</td>
+    <td class="imd318 time3">12:00 PM - 2:00 PM</td>
+    <td class="imd313 time4">9:00 AM - 10:00 AM</td>
+  </tr>
+  
+  <tr>
+    <td class="imd317 time1">IMD 317</td>
+    <td class="imd318 time2">IMD 318</td>
+    <td class="imd318 time3">IMD 318</td>
+    <td class="imd313 time4">IMD 313</td>
+  </tr>
+  
+  <tr>
+    <td class="time6">2:00 PM - 3:00 PM</td>
+    <td rowspan="4">Study Session</td>
+    <td rowspan="2">Study Session</td>
+    <td rowspan="4">Study Session</td>
+  </tr>
+  
+  <tr>
+    <td class="imd316 time6">IMD 316</td>
+  </tr>
+  
+  <tr>
+    <td class="time5">4:00 PM - 6:00 PM</td>
+    <td class="time5">4:00 PM - 6:00 PM</td>
+    <td class="time5">4:00 PM - 6:00 PM</td>
+  </tr>
+  
+  <tr>
+    <td class="imd317 time5">IMD 317</td>
+    <td class="imd310 time5">IMD 310</td>
+    <td class="imd313 time5">IMD 313</td>
+  </tr>
+
+</table>
+
+<div style="height: 50px;"></div>
+
+<center><a href="#top"><button>Return to Top</button>
+<a href="mainmenu.html"><button>Go to Main Menu</button></center>
+
+<div style="height: 50px;"></div>
+
+<footer>
+
+	<div class="footerBottom">
+		<p>Copyright &copy;2024; Designed by <span class="designer">Maww</p>
+	</div>
+</div>
+</footer>
+
+</body>
+</html>

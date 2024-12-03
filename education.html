@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Izzah's Educational Background</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fc;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 42px;
+            color: #1b7da1;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: linear-gradient(to bottom, #1b7da1, #77c7ff);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+            padding: 10px 40px;
+        }
+
+        .container.left {
+            left: 0;
+        }
+
+        .container.right {
+            left: 50%;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            background: #1b7da1;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .container.left::before {
+            right: -6px;
+        }
+
+        .container.right::before {
+            left: -6px;
+        }
+
+        .content {
+            background: linear-gradient(to right, #f0f8ff, #e0f7fc);
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container:hover .content {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            font-size: 32px;
+            color: #1b7da1;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .container.left .content {
+            transform: translateX(-20%);
+        }
+
+        .container.right .content {
+            transform: translateX(20%);
+        }
+
+        .container.left .content::after,
+        .container.right .content::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .container.left .content::after {
+            right: 100%;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #f0f8ff transparent transparent;
+        }
+
+        .container.right .content::after {
+            left: 100%;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #f0f8ff;
+        }
+
+        .container.right {
+            animation: slideInRight 1s ease;
+        }
+
+        .container.left {
+            animation: slideInLeft 1s ease;
+        }
+
+	.footer{
+		margin: 0;
+      		padding: 0;
+	}
+
+	.footerBottom{
+		background-color: #000;
+		padding: 20px;
+		text-align: center;
+
+	}
+
+	.footerBottom p{
+		color: white;
+
+	}
+
+	.designer{
+		opacity: 0.7;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 400;
+		margin: 0px 5px;
+
+	}
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        ol {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ol li {
+            line-height: 1.8;
+            color: #444;
+        }
+
+     button{
+      width: 180px;
+      color: white;
+      font-size: 12px;
+      padding: 12px 0;
+      background: #1b7da1;
+      border: 0;
+      border-radius: 20px;
+      outline: none;
+      margin-top: 30px;
+    }
+
+     button:hover {
+       background-color: #5ba9a6;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>Educational Background</h1>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <div class="icon">🎓</div>
+                <p class="date">2008-2010</p>
+                <p>Graduated from kindergarten at Pasti Al-Falah, Taman Desa Permai, Kedah.</p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <div class="icon">📚</div>
+                <p class="date">2011-2016</p>
+                <p>Graduated from elementary school at Sekolah Kebangsaan Lunas Jaya, Kedah.</p>
+                <ol>
+                    <li>Achieved 12A in UPKK (2015).</li>
+                    <li>Achieved 4A 2B in UPSR (2016).</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <div class="icon">🚀</div>
+                <p class="date">2017-2021</p>
+                <p>Graduated second class upper from high school at MRSM Baling, Kedah.</p>
+                <ol>
+                    <li>Achieved band 3.3, 5.1, and 3.8 for English, Mathematics, and Science in Checkpoint IGCSE (2018).</li>
+                    <li>Participated in Robofair (2019).</li>
+                    <li>Achieved 6A in PT3 (2019).</li>
+                    <li>Achieved 4C 2D in Cambridge IGCSE (2020).</li>
+                    <li>Achieved 5A in SPM (2021).</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <div class="icon">🌟</div>
+                <p class="date">2022-Present</p>
+                <p>Currently pursuing Diploma in Information Management at UiTM Kedah.</p>
+            </div>
+        </div>
+    </div>
+
+<div style="height: 50px;"></div>
+
+<center><a href="#top"><button>Return to Top</button>
+<a href="mainmenu.html"><button>Go to Main Menu</button></center>
+
+<div style="height: 50px;"></div>
+
+<footer>
+
+	<div class="footerBottom">
+		<p>Copyright &copy;2024; Designed by <span class="designer">Maww</p>
+	</div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Izzah's Family</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+    }
+
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+
+	{
+            margin: 0;
+            padding: 0;
+        }
+
+        .family-section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .family-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .family-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .family-card {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            color: #333;
+        }
+
+        .family-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .family-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .family-card .content {
+            padding: 20px;
+        }
+
+        .family-card .content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #1b7da1;
+        }
+
+        .family-card .content p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .family-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .family-card {
+                width: 80%;
+            }
+        }
+
+     button{
+      width: 180px;
+      color: white;
+      font-size: 12px;
+      padding: 12px 0;
+      background: #1b7da1;
+      border: 0;
+      border-radius: 20px;
+      outline: none;
+      margin-top: 30px;
+    }
+
+     button:hover {
+       background-color: #5ba9a6;
+    }
+
+    .footerBottom{
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footerBottom p{
+      color: white;
+
+    }
+
+	.designer{
+		opacity: 0.7;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 400;
+		margin: 0px 5px;
+
+   }
+
+</style>
+
+<body>
+<div style="height: 60px;"></div>
+<a name ="top">
+<div class="heading">
+	<center><img src="familyheader.jpg" alt="family"></center>
+</div>
+
+<div style="height: 100px;"></div>
+
+<hr style="height:50px;border-width:0;color:#1b7da1;background-color:#1b7da1">
+
+<div style="height: 50px;"></div>
+
+<center><p style="font-size: 300%;font-family:Trirong;"> 🐧  🎀  𝑀𝓎 𝒻𝒶𝓂𝒾𝓁𝓎  🎀  🐧</p></center>
+
+<section class="container">
+	<div class="slider-wrapper">
+		<div class="slider">
+
+			<img is="slide-1" src="familyphoto-1.jpg" alt="img1">
+			<img is="slide-2" src="familyphoto-2.jpg" alt="img2">
+			<img is="slide-3" src="familyphoto-3.jpg" alt="img3">
+			<img is="slide-4" src="familyphoto-4.jpg" alt="img4">
+		</div>
+
+	<div class="dots">
+		<label for="img1"></label>
+		<label for="img2"></label>
+		<label for="img3"></label>
+		<label for="img4"></label>
+	</div>
+	</div>
+</section>
+
+<div style="height: 20px;"></div>
+
+<div class="family-section">
+    <h1>Introducing the pillars of wisdom and warmth in our family</h1>
+
+<div style="height: 20px;"></div>
+
+    <div class="family-container">
+        <div class="family-card">
+            <img src="father.jpg" alt="Father">
+            <div class="content">
+                <h2>Father</h2>
+                <p>The wise and humorous backbone of our family, always ready with life advice and a good laugh.</p>
+            </div>
+        </div>
+
+        <div class="family-card">
+            <img src="mother.png" alt="Mother">
+            <div class="content">
+                <h2>Mother</h2>
+                <p>The heart of our home, bringing warmth and love through her care and legendary cooking.</p>
+            </div>
+        </div>
+</div>
+
+<br>
+
+<div style="height: 50px;"></div>
+
+<center><a href="#top"><button>Return to Top</button>
+<a href="mainmenu.html"><button>Go to Main Menu</button></center>
+
+<div style="height: 50px;"></div>
+
+<footer>
+
+	<div class="footerBottom">
+		<p>Copyright &copy;2024; Designed by <span class="designer">Maww</p>
+	</div>
+</footer>
+
+</body>
+
+</html>
